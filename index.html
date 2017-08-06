@@ -2,6 +2,15 @@
 <html>
 <head>
 <title>Jebhook Forever</title>
+<script>
+
+//hello
+function funnyfunction(){
+	var audio = new Audio('Cosmos.mp3');
+	audio.play();	
+}
+
+</script>
 <style> 
   img {
     display: block;
@@ -10,33 +19,44 @@
   } 
   p{
     text-align: center;
-    background-color: rgb(40, 40, 40);
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
+    background: rgba(25, 25, 25, 0.85);
+	margin-left: 500px;
+	margin-right: 500px;
+    color: white;	
+	box-shadow: 7px 5px 5px #888888;
   }
   header{
     text-align: center;
     letter-spacing: 2px;
     font-size: 200%;
-    background-color: lightblue;
+	color: white;
+    background: rgba(40, 40, 40, 0.85);
+	text-shadow: 2px 2px;
+	box-shadow: 7px 5px 5px #888888;
   }
   body{
     background-image: url("ownage.jpg");
     background-size: 320px 300px;
   }
+  #funnybutton{
+	padding : 5px 20px 5px 20px;
+    margin  : auto;
+    display : block;
+ 
+  }
 </style>
 </head>
 
 <body>
-  <header> <b> JEBHOOK: THE VERY BEST </b> </header>
+  <header id="funnyheader"> <b> JEBHOOK: THE VERY BEST </b> </header>
   <a href="https://en.wiktionary.org/wiki/frag"> <img src="fragimage.jpg" alt=frag> </a>
-  
   <p> With never-before-seen epic features, you can frag on.</p>
+  <button id="funnybutton" onclick="funnyfunction()">JEBHOOK</button>
 <body>
 
 <audio autoplay loop>
-<source src="Cosmos.mp3" type="audio/mpeg">
+	<source src="Cosmos.mp3" type="audio/mpeg">
 </audio>
+
 
 </html>
