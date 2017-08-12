@@ -4,10 +4,23 @@
 <title>Jebhook Forever</title>
 <script>
 
+var funnyrandom = -1;
 //hello
-function funnyfunction(){
-	var audio = new Audio('Cosmos.mp3');
-	audio.play();	
+function FunnyFunction(){
+	if (funnyrandom == -1)
+	{
+	funnyrandom = Math.floor(Math.random() * 2) + 1;
+	}
+	
+	if (funnyrandom == 1)
+	{
+		var audio = new Audio('Cosmos.mp3');
+	}
+	else if (funnyrandom == 2)
+	{
+		var audio = new Audio('Uta.mp3');
+	}
+	audio.play();
 }
 
 </script>
@@ -51,19 +64,14 @@ function funnyfunction(){
 </style>
 </head>
 
-<body>
+<body onload="FunnyFunction()">
   <header id="funnyheader"> <b> JEBHOOK: THE VERY BEST </b> </header>
   <a href="https://en.wiktionary.org/wiki/frag"> <img src="fragimage.jpg" alt=frag> </a>
   <p> With never-before-seen epic features, you can frag on. 
   <a href="http://steamcommunity.com/groups/JebhookOfficial" id="grouplink"><br>Link To Official Steam Group</a>
   </p>
 	
-  <button id="funnybutton" onclick="funnyfunction()">JEBHOOK</button>
+  <button id="funnybutton" onclick="FunnyFunction()">JEBHOOK</button>
 <body>
-
-<audio autoplay loop>
-	<source src="Cosmos.mp3" type="audio/mpeg">
-</audio>
-
 
 </html>
