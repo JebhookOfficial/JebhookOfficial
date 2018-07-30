@@ -7,19 +7,29 @@
 var funnyrandom = -1;
 //hello
 function FunnyFunction(){
+	
 	if (funnyrandom == -1)
 	{
-	funnyrandom = Math.floor(Math.random() * 2) + 1;
+	funnyrandom = Math.floor(Math.random() * 4) + 1;
 	}
 	
 	if (funnyrandom == 1)
 	{
-		var audio = new Audio('Cosmos.mp3');
+		var audio = new Audio('gibbed.mp3');
 	}
 	else if (funnyrandom == 2)
 	{
 		var audio = new Audio('Uta.mp3');
 	}
+	else if (funnyrandom == 3)
+	{
+		var audio = new Audio('Breaking Up Is Hard To Do.mp3');	
+	}
+	else if (funnyrandom ==4)
+	{
+		var audio = new Audio('apple.mp3');			
+	}
+				      
 	audio.play();
 }
 
